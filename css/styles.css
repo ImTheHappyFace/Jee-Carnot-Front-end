@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+
+.login-logo{
+    padding: 90px 20px 0 10px;
+}
+#text,
+#phone,
+#email,
+#pwd{
+    padding: 12px 73px;
+    background: #f6f6f6;
+    border-radius: 30px;
+    border: none;
+    outline: none !important;
+}
+
+form {
+    padding: 0 105px;
+}
+
+.btn-submit{
+    padding: 0 20%;
+}
+
+.btn-submit button{
+    background-color: #0a216f;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 40px;
+}
+
+.btn-submit button:hover{
+    color: white;
+    box-shadow: 2px 3px 10px gray;
+    transform: translate(-2px , -2px);
+    transition: 0.2s ease-in-out;
+}
+
+.text-account p{
+    font-size: 24px;
+}
+
+.text-account p span a{
+    text-decoration: none;
+    color: #0a216f;
+}
+.form-group{
+    position: relative;
+}
+
+.form-icons {
+    position: absolute;
+    left: 5%;
+    top: 43%;
+    transform: translate(10%, 10%);
+}
