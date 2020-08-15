@@ -15,7 +15,7 @@ body{
 #phone,
 #email,
 #pwd{
-    padding: 12px 73px;
+    padding:10px 73px 10px 73px;
     background: #f6f6f6;
     border-radius: 30px;
     border: none;
@@ -23,7 +23,7 @@ body{
 }
 
 form {
-    padding: 0 105px;
+    padding: 0 125px;
 }
 
 .btn-submit{
@@ -63,6 +63,34 @@ form {
     transform: translate(10%, 10%);
 }
 
+.login-options{
+    height: 40px;
+    width: 40px;
+    margin: 0 14px;
+    cursor: pointer;
+}
+
+.line-icons{
+    position: relative;
+}
+
+.line-left,.line-right{
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    width: 150px;
+}
+
+.line-left{
+    left: 48px;
+    top: 13px;
+}
+
+.line-right{
+    right: 48px;
+    top: 13px;
+}
+
+
 @media only screen and (max-width: 800px) {
     .row-left{
         display: none;
@@ -78,4 +106,10 @@ form {
     .text-account p {
         font-size: 18px;
     }
+    .line-left,.line-right{
+        position: absolute;
+        border: 1px solid rgba(0, 0, 0, 0.322);
+        width: 70px;
+    }
+
   }
