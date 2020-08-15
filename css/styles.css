@@ -62,3 +62,20 @@ form {
     top: 43%;
     transform: translate(10%, 10%);
 }
+
+@media only screen and (max-width: 800px) {
+    .row-left{
+        display: none;
+    }
+    form{
+        padding: 0 30px;
+    }
+    .btn-submit button {
+        color: white;
+        padding: 13px 2px;
+        width: 200px;
+    }
+    .text-account p {
+        font-size: 18px;
+    }
+  }
