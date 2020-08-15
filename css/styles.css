@@ -113,3 +113,20 @@ form {
     }
 
   }
+
+
+
+
+  /* Login Page */
+
+  .text-password{
+      text-align: right;
+      color: #0a216f;
+      font-size: 18px;
+      cursor: pointer;
+  }
+
+  .btn-login button{
+      padding: 10px 40px;
+      border-radius: 31px;
+  }
