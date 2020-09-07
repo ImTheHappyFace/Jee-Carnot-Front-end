@@ -90,6 +90,33 @@ form {
     top: 13px;
 }
 
+.modal-login{
+    display: none;
+    position: fixed;
+    top: 18%;
+    left: 21%;
+    width: 600px;
+    height: 350px;
+    background-color: #fffffffa;
+    border-radius: 20px;
+}
+
+.modal-login-show{
+    display: block;
+}
+
+.body-change{
+    background-color: rgba(0, 0, 0, 0.295) !important;
+}
+
+.otp-inpt{
+    outline: none;
+    border: none;
+    font-size: 40px;
+    padding: 20px 40px;
+}
+
+
 
 @media only screen and (max-width: 800px) {
     .row-left{

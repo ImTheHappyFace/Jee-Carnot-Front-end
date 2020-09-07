@@ -9,8 +9,8 @@
   <title>Login Mentee</title>
 </head>
 
-<body>
-  <div class="container-fluid">
+<body id="main-body">
+  <div class="container-fluid" >
     <div class="row">
       <div class="col-md-6 row-left">
         <div class="login-logo">
@@ -31,7 +31,7 @@
               <img src="./assets/icons/user.png" alt="" height="20px" width="20px">
             </span>
             <label for="text"></label>
-            <input type="text" class="form-control" id="text" placeholder="Name">
+            <input type="text" class="form-control" id="text" placeholder="Name" required>
 
           </div>
           <div class="form-group">
@@ -39,31 +39,34 @@
               <img src="./assets/icons/phone.png" alt="" height="20px" width="20px">
             </span>
             <label for="phone"></label>
-            <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+            <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required>
           </div>
           <div class="form-group">
             <span class="form-icons">
               <img src="./assets/icons/mail.png" alt="" height="20px" width="20px">
             </span>
             <label for="email"></label>
-            <input type="email" class="form-control" id="email" placeholder="Email">
+            <input type="email" class="form-control" id="email" placeholder="Email" required>
           </div>
           <div class="form-group">
             <span class="form-icons">
               <img src="./assets/icons/lock.png" alt="" height="20px" width="20px">
             </span>
             <label for="pwd"></label>
-            <input type="password" class="form-control" id="pwd" placeholder="Password">
+            <input type="password" class="form-control" id="pwd" class="pwd1" placeholder="Password" required>
           </div>
           <div class="form-group">
             <span class="form-icons">
               <img src="./assets/icons/lock.png" alt="" height="20px" width="20px">
             </span>
             <label for="pwd"></label>
-            <input type="password" class="form-control" id="pwd" placeholder="Confirm Password">
+            <input type="password" class="form-control" id="pwd" class="pwd2" placeholder="Confirm Password" required> 
           </div>
           <div class="btn-submit pt-4">
-            <button type="submit" class="btn btn-default">Verify Phone Number</button>
+            
+            <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#modal">
+              Launch modal
+            </button>
           </div>
           <div class="text-account pt-1 pb-1">
             <p>
@@ -83,18 +86,59 @@
               <img class="login-options" src="./assets/icons/facebook (1).png" alt="">
             </span>
             <span>
-              <img class="login-options" src="./assets/icons/linkedin.png" alt="">
+              <img class="login-options" src="./assets/icons/facebook (1).png" alt="">
             </span>
             <span>
-              <img class="login-options" src="./assets/icons/icons8-google-500.png" alt="">
+              <img class="login-options" src="./assets/icons/facebook (1).png" alt="">
             </span>
           </div>
         </form>
 
       </div>
     </div>
+
+
+    <div class="modal text-center" tabindex="-1" id='modal' style="top: 30vh;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="padding: 10px 130px;">
+            <h3 class="" >   
+              OTP Verification
+            </h3>
+            <div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <h5>
+              Enter The OTP sent to +91-8923-789-551
+            </h5>
+
+            <div style="padding-left: 100px;overflow-x: hidden;" >
+              <input type="text" placeholder="__  __  __  __" class="otp-inpt">
+            </div>
+
+            <div>
+              <h5>
+                Didn't recieve OTP? <a href=""> Resend</a>
+              </h5>
+            </div>
+          </div>
+          <div class="modal-footer" style="padding-right: 160px;">
+           <button class="btn-primary" style="padding: 10px 20px;font-size: 18px;border-radius: 10px;">
+             Verify and Proceed
+           </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 
+  <script src="./login.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 
 </html>
